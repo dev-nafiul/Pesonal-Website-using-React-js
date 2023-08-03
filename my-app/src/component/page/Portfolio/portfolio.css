@@ -1,0 +1,126 @@
+.portfolio__header{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+
+}
+.portfolio__header span{
+    color: #5d41ff;
+    border-bottom: 2px solid #5d41ff;
+}
+.porfolio-grids{
+   display: flex;
+   flex-wrap: wrap;
+
+}
+/* portfolioitem.css */
+.portfolio__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 30%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+    
+  }
+  
+  .portfolio__hover {
+    position: absolute;
+    background-color: #5d41ff;
+    inset: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+  }
+  
+  .portfolio__hover:hover {
+    opacity: 1;
+  }
+  
+  .portfolio__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .portfolio-hover-title {
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+  }
+  
+  .portfolio__hover:hover .portfolio-hover-title {
+    font-size: 27px;
+    font-family: sans-serif;
+    color: #fff;
+    transform: translateY(0);
+  }
+  
+  .modal__close {
+    width: 50px;
+    position: absolute;
+    top: 3px;
+    right: -54px;
+    opacity: 0.5;
+
+  }
+  
+  .portfolio--modal {
+    position: fixed;
+    inset: 0;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    align-items: center;
+    width: 650px;
+    border-radius: 15px;
+    margin: auto;
+    height: 350px;
+    box-shadow: 5px 5px 13px rgba(0,0,0,0.3);
+    top: -20%;
+  }
+  
+  .portfolio-modal-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 5px 5px 13px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+  .modal-image{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .modal__title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #5d41ff;
+  }
+  /*  responsive  */
+  @media screen and (max-width:768px) {
+    .porfolio-grids {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .portfolio__item {
+    width: 45%;
+    padding: 0;
+    margin: 5px 0 5px 0;
+  }
+  .portfolio__header{
+    font-size: 25px;
+  }
+  }

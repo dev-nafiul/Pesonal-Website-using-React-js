@@ -1,0 +1,55 @@
+/*  Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  --first-color:rgba(46, 21, 187, 0.533);
+  --title-color:#b8b4b4;
+  --text-color:#b8b4b4;
+  --body-color:#ffffff;
+  --container-color:#e5e1e1;
+  --border-color:#fffbfb;
+  --text-white:#ffffff;
+
+  /* font-family */
+  --first-font:'Open Sans', sans-serif;
+  --second-font:'Poppins', sans-serif;
+  /* font-size */
+  --big-font:56px;
+  --small-font:20px;
+  --h1-font-size:24px;
+  --h2-font-size:20px;
+  --h3-font-size:18px;
+}
+
+/* base */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,input,textarea{
+  font-family: var(--first-font);
+  font-weight: 500;
+  font-size: 20px;
+}
+h1,h2,h3{
+  color: var(--title-color);
+  font-weight: 700;
+  font-family: var(--second-font);
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+button,
+input,
+textarea{
+  border: none;
+  background: transparent;
+  outline: none;
+}
+img{
+  max-width: 100%;
+}
